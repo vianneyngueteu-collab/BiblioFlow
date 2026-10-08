@@ -1,0 +1,900 @@
+[
+{
+  "model": "bibliotheque.utilisateur",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$4Ti5mZm5FKWKyqqNGjtKIN$tqop4FL3QbPHK/gzLnUoDAwLEeIvjP49lygn+oy/y58=",
+    "last_login": "2026-10-07T22:42:46.340Z",
+    "is_superuser": true,
+    "username": "admin",
+    "email": "admin@bibliotheque.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-10-07T04:57:44.571Z",
+    "nom": "Bibliothèque",
+    "prenom": "Admin",
+    "telephone": "690000000",
+    "adresse": "Yaoundé, Cameroun",
+    "role": "administrateur",
+    "statut": "actif",
+    "numero_carte": null,
+    "date_expiration": null,
+    "suspendu_jusqu": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "bibliotheque.utilisateur",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$cyVuLxUwX2fCPyNbjRd8Fi$lghkRrlLpMheUHtuUpZ1K3og2Y6akDXM4hO7OqACDb4=",
+    "last_login": "2026-10-07T05:11:15.798Z",
+    "is_superuser": false,
+    "username": "bibliothecaire",
+    "email": "bibliothecaire@bibliotheque.local",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-07T04:57:45.647Z",
+    "nom": "Ndom",
+    "prenom": "Aline",
+    "telephone": "690000000",
+    "adresse": "Yaoundé, Cameroun",
+    "role": "bibliothecaire",
+    "statut": "actif",
+    "numero_carte": null,
+    "date_expiration": null,
+    "suspendu_jusqu": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "bibliotheque.utilisateur",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$HpiS0StpXHRvAp6ZG8NoRn$Fz3kYq0xhOTpxQGwHm6G+uDk8q12XQ3MXPdRs9mVDDo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "etudiant",
+    "email": "etudiant@bibliotheque.local",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-07T04:57:46.761Z",
+    "nom": "Ngueteu",
+    "prenom": "Vianney",
+    "telephone": "690000000",
+    "adresse": "Yaoundé, Cameroun",
+    "role": "adherent",
+    "statut": "actif",
+    "numero_carte": "ADH-1001",
+    "date_expiration": "2027-10-07",
+    "suspendu_jusqu": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "bibliotheque.utilisateur",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$63zfpJtmD6pEQOcjUD5dXK$sTFEAtcZy+hyV9qYFH4GCHK/smC+VK605bCOC3L+Q00=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "lecteur2",
+    "email": "lecteur2@bibliotheque.local",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-07T04:57:47.771Z",
+    "nom": "Manga",
+    "prenom": "Sarah",
+    "telephone": "690000000",
+    "adresse": "Yaoundé, Cameroun",
+    "role": "adherent",
+    "statut": "actif",
+    "numero_carte": "ADH-1002",
+    "date_expiration": "2027-10-07",
+    "suspendu_jusqu": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "bibliotheque.utilisateur",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$j538WtmIm8qGYOOVxdVP3T$sOphQhsVLEW6Ozahc0hpenPrTFk5s8Wt9JnSfX7OQsY=",
+    "last_login": "2026-10-07T22:47:06.013Z",
+    "is_superuser": false,
+    "username": "georges",
+    "email": "georges@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-07T05:09:24.075Z",
+    "nom": "PABLO",
+    "prenom": "GEORGES",
+    "telephone": "690000011",
+    "adresse": "Douala, Cameroun",
+    "role": "adherent",
+    "statut": "actif",
+    "numero_carte": "ADH-1003",
+    "date_expiration": "2027-10-07",
+    "suspendu_jusqu": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "bibliotheque.utilisateur",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$HvoqBNKvxfTOyTr9PuRFhA$lFnYDEAjs3cY7pMfyN0OXx9L6ojAPId3NEagpiJKUdA=",
+    "last_login": "2026-10-07T22:45:50.923Z",
+    "is_superuser": false,
+    "username": "remoi",
+    "email": "remoi@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-07T22:45:05.842Z",
+    "nom": "remoi",
+    "prenom": "moi",
+    "telephone": "690000011",
+    "adresse": "Douala, Cameroun",
+    "role": "adherent",
+    "statut": "en_attente",
+    "numero_carte": "ADH-1004",
+    "date_expiration": null,
+    "suspendu_jusqu": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 1,
+  "fields": {
+    "titre": "Introduction à Python",
+    "auteur": "Équipe BiblioTech",
+    "isbn": null,
+    "description": "Ouvrage de référence en informatique, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-1.svg",
+    "categorie": "Informatique",
+    "annee_publication": 2025,
+    "langue": "Français",
+    "prix": "8500.00",
+    "stock_vente": 12,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 2,
+  "fields": {
+    "titre": "Développement Web moderne",
+    "auteur": "Équipe BiblioTech",
+    "isbn": null,
+    "description": "Ouvrage de référence en informatique, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-2.svg",
+    "categorie": "Informatique",
+    "annee_publication": 2025,
+    "langue": "Français",
+    "prix": "12000.00",
+    "stock_vente": 9,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 3,
+  "fields": {
+    "titre": "Bases de données relationnelles",
+    "auteur": "Jean Mvondo",
+    "isbn": null,
+    "description": "Ouvrage de référence en informatique, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-3.svg",
+    "categorie": "Informatique",
+    "annee_publication": 2024,
+    "langue": "Français",
+    "prix": "10000.00",
+    "stock_vente": 8,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 4,
+  "fields": {
+    "titre": "Algorithmes et structures de données",
+    "auteur": "Collectif Campus",
+    "isbn": null,
+    "description": "Ouvrage de référence en informatique, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-4.svg",
+    "categorie": "Informatique",
+    "annee_publication": 2024,
+    "langue": "Français",
+    "prix": "9500.00",
+    "stock_vente": 6,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 5,
+  "fields": {
+    "titre": "Mathématiques pour tous",
+    "auteur": "Paul Essomba",
+    "isbn": null,
+    "description": "Ouvrage de référence en science, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-5.svg",
+    "categorie": "Science",
+    "annee_publication": 2023,
+    "langue": "Français",
+    "prix": "7500.00",
+    "stock_vente": 15,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 6,
+  "fields": {
+    "titre": "Sciences de la vie",
+    "auteur": "Amina K.",
+    "isbn": null,
+    "description": "Ouvrage de référence en science, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-6.svg",
+    "categorie": "Science",
+    "annee_publication": 2024,
+    "langue": "Français",
+    "prix": "9000.00",
+    "stock_vente": 10,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 7,
+  "fields": {
+    "titre": "Méthodes de recherche universitaire",
+    "auteur": "Marie Ndom",
+    "isbn": null,
+    "description": "Ouvrage de référence en éducation, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-7.svg",
+    "categorie": "Éducation",
+    "annee_publication": 2025,
+    "langue": "Français",
+    "prix": "6500.00",
+    "stock_vente": 14,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 8,
+  "fields": {
+    "titre": "Réussir son projet académique",
+    "auteur": "Marie Ndom",
+    "isbn": null,
+    "description": "Ouvrage de référence en éducation, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-8.svg",
+    "categorie": "Éducation",
+    "annee_publication": 2025,
+    "langue": "Français",
+    "prix": "7000.00",
+    "stock_vente": 11,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 9,
+  "fields": {
+    "titre": "Entrepreneuriat au Cameroun",
+    "auteur": "Paul Essomba",
+    "isbn": null,
+    "description": "Ouvrage de référence en économie, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-1.svg",
+    "categorie": "Économie",
+    "annee_publication": 2024,
+    "langue": "Français",
+    "prix": "11000.00",
+    "stock_vente": 5,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 10,
+  "fields": {
+    "titre": "Gestion financière simplifiée",
+    "auteur": "Jean Mvondo",
+    "isbn": null,
+    "description": "Ouvrage de référence en économie, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-2.svg",
+    "categorie": "Économie",
+    "annee_publication": 2023,
+    "langue": "Français",
+    "prix": "9500.00",
+    "stock_vente": 8,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 11,
+  "fields": {
+    "titre": "Les classiques de la littérature",
+    "auteur": "Collectif Campus",
+    "isbn": null,
+    "description": "Ouvrage de référence en roman, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-3.svg",
+    "categorie": "Roman",
+    "annee_publication": 2022,
+    "langue": "Français",
+    "prix": "8000.00",
+    "stock_vente": 10,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.livre",
+  "pk": 12,
+  "fields": {
+    "titre": "Lire, apprendre et progresser",
+    "auteur": "Amina K.",
+    "isbn": null,
+    "description": "Ouvrage de référence en développement personnel, proposé au catalogue BiblioFlow pour la consultation, l’emprunt et, lorsque le stock le permet, l’achat.",
+    "image": "cover-4.svg",
+    "categorie": "Développement personnel",
+    "annee_publication": 2024,
+    "langue": "Français",
+    "prix": "6000.00",
+    "stock_vente": 13,
+    "actif": true
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 1,
+  "fields": {
+    "livre": 1,
+    "code_barres": "EX-0001-01",
+    "etat_physique": "bon",
+    "statut": "emprunte",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-01"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 2,
+  "fields": {
+    "livre": 1,
+    "code_barres": "EX-0001-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-01"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 3,
+  "fields": {
+    "livre": 1,
+    "code_barres": "EX-0001-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-01"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 4,
+  "fields": {
+    "livre": 2,
+    "code_barres": "EX-0002-01",
+    "etat_physique": "bon",
+    "statut": "emprunte",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-02"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 5,
+  "fields": {
+    "livre": 2,
+    "code_barres": "EX-0002-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-02"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 6,
+  "fields": {
+    "livre": 2,
+    "code_barres": "EX-0002-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-02"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 7,
+  "fields": {
+    "livre": 3,
+    "code_barres": "EX-0003-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-03"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 8,
+  "fields": {
+    "livre": 3,
+    "code_barres": "EX-0003-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-03"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 9,
+  "fields": {
+    "livre": 3,
+    "code_barres": "EX-0003-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-03"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 10,
+  "fields": {
+    "livre": 4,
+    "code_barres": "EX-0004-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-04"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 11,
+  "fields": {
+    "livre": 4,
+    "code_barres": "EX-0004-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-04"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 12,
+  "fields": {
+    "livre": 4,
+    "code_barres": "EX-0004-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère A",
+    "code_rayon": "INF-04"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 13,
+  "fields": {
+    "livre": 5,
+    "code_barres": "EX-0005-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère B",
+    "code_rayon": "SCI-05"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 14,
+  "fields": {
+    "livre": 5,
+    "code_barres": "EX-0005-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère B",
+    "code_rayon": "SCI-05"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 15,
+  "fields": {
+    "livre": 5,
+    "code_barres": "EX-0005-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère B",
+    "code_rayon": "SCI-05"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 16,
+  "fields": {
+    "livre": 6,
+    "code_barres": "EX-0006-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère B",
+    "code_rayon": "SCI-06"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 17,
+  "fields": {
+    "livre": 6,
+    "code_barres": "EX-0006-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère B",
+    "code_rayon": "SCI-06"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 18,
+  "fields": {
+    "livre": 6,
+    "code_barres": "EX-0006-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère B",
+    "code_rayon": "SCI-06"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 19,
+  "fields": {
+    "livre": 7,
+    "code_barres": "EX-0007-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère C",
+    "code_rayon": "EDU-07"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 20,
+  "fields": {
+    "livre": 7,
+    "code_barres": "EX-0007-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère C",
+    "code_rayon": "EDU-07"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 21,
+  "fields": {
+    "livre": 7,
+    "code_barres": "EX-0007-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère C",
+    "code_rayon": "EDU-07"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 22,
+  "fields": {
+    "livre": 8,
+    "code_barres": "EX-0008-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère C",
+    "code_rayon": "EDU-08"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 23,
+  "fields": {
+    "livre": 8,
+    "code_barres": "EX-0008-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère C",
+    "code_rayon": "EDU-08"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 24,
+  "fields": {
+    "livre": 8,
+    "code_barres": "EX-0008-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère C",
+    "code_rayon": "EDU-08"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 25,
+  "fields": {
+    "livre": 9,
+    "code_barres": "EX-0009-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère D",
+    "code_rayon": "ECO-09"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 26,
+  "fields": {
+    "livre": 9,
+    "code_barres": "EX-0009-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère D",
+    "code_rayon": "ECO-09"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 27,
+  "fields": {
+    "livre": 9,
+    "code_barres": "EX-0009-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère D",
+    "code_rayon": "ECO-09"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 28,
+  "fields": {
+    "livre": 10,
+    "code_barres": "EX-0010-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère D",
+    "code_rayon": "ECO-10"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 29,
+  "fields": {
+    "livre": 10,
+    "code_barres": "EX-0010-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère D",
+    "code_rayon": "ECO-10"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 30,
+  "fields": {
+    "livre": 10,
+    "code_barres": "EX-0010-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère D",
+    "code_rayon": "ECO-10"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 31,
+  "fields": {
+    "livre": 11,
+    "code_barres": "EX-0011-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère E",
+    "code_rayon": "ROM-11"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 32,
+  "fields": {
+    "livre": 11,
+    "code_barres": "EX-0011-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère E",
+    "code_rayon": "ROM-11"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 33,
+  "fields": {
+    "livre": 11,
+    "code_barres": "EX-0011-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère E",
+    "code_rayon": "ROM-11"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 34,
+  "fields": {
+    "livre": 12,
+    "code_barres": "EX-0012-01",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère F",
+    "code_rayon": "DEV-12"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 35,
+  "fields": {
+    "livre": 12,
+    "code_barres": "EX-0012-02",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère F",
+    "code_rayon": "DEV-12"
+  }
+},
+{
+  "model": "bibliotheque.exemplaire",
+  "pk": 36,
+  "fields": {
+    "livre": 12,
+    "code_barres": "EX-0012-03",
+    "etat_physique": "bon",
+    "statut": "disponible",
+    "etagere": "Étagère F",
+    "code_rayon": "DEV-12"
+  }
+},
+{
+  "model": "bibliotheque.emprunt",
+  "pk": 1,
+  "fields": {
+    "adherent": [
+      "lecteur2"
+    ],
+    "personnel": [
+      "bibliothecaire"
+    ],
+    "exemplaire": 1,
+    "date_demande": "2026-09-14T08:00:00Z",
+    "date_emprunt": "2026-09-14",
+    "date_retour_prevue": "2026-09-28",
+    "date_limite_retrait": null,
+    "date_retour_effective": null,
+    "statut": "retard",
+    "adresse_livraison": "",
+    "nb_prolongations": 0,
+    "motif_sanction": "Retard de 10 jour(s)",
+    "montant_sanction": "1000.00",
+    "statut_paiement": "impayee",
+    "date_sanction": "2026-10-07T04:57:48.949Z"
+  }
+},
+{
+  "model": "bibliotheque.emprunt",
+  "pk": 2,
+  "fields": {
+    "adherent": [
+      "etudiant"
+    ],
+    "personnel": [
+      "bibliothecaire"
+    ],
+    "exemplaire": 4,
+    "date_demande": "2026-10-03T08:00:00Z",
+    "date_emprunt": "2026-10-03",
+    "date_retour_prevue": "2026-10-17",
+    "date_limite_retrait": null,
+    "date_retour_effective": null,
+    "statut": "en_cours",
+    "adresse_livraison": "",
+    "nb_prolongations": 0,
+    "motif_sanction": "",
+    "montant_sanction": "0.00",
+    "statut_paiement": "",
+    "date_sanction": null
+  }
+},
+{
+  "model": "bibliotheque.achat",
+  "pk": 1,
+  "fields": {
+    "adherent": [
+      "georges"
+    ],
+    "reference": "BF-LEGACY-000001",
+    "date_achat": "2026-10-07T05:09:59.965Z",
+    "canal": "en_ligne",
+    "mode_reception": "livraison",
+    "mode_paiement": "mobile",
+    "statut_paiement": "paye",
+    "reference_paiement": "",
+    "date_paiement": null,
+    "adresse_livraison": "Douala, Cameroun",
+    "date_limite_retrait": null,
+    "client_prenom": "",
+    "client_nom": "",
+    "client_email": "",
+    "client_telephone": "",
+    "statut": "terminee"
+  }
+},
+{
+  "model": "bibliotheque.achat",
+  "pk": 2,
+  "fields": {
+    "adherent": [
+      "georges"
+    ],
+    "reference": "BF-20261007-6DC225A4",
+    "date_achat": "2026-10-07T22:47:26.224Z",
+    "canal": "en_ligne",
+    "mode_reception": "livraison",
+    "mode_paiement": "",
+    "statut_paiement": "en_attente",
+    "reference_paiement": "",
+    "date_paiement": null,
+    "adresse_livraison": "Douala, Cameroun",
+    "date_limite_retrait": null,
+    "client_prenom": "",
+    "client_nom": "",
+    "client_email": "",
+    "client_telephone": "",
+    "statut": "en_attente"
+  }
+},
+{
+  "model": "bibliotheque.ligneachat",
+  "pk": 1,
+  "fields": {
+    "achat": 1,
+    "livre": 9,
+    "quantite": 1,
+    "prix_applique": "11000.00"
+  }
+},
+{
+  "model": "bibliotheque.ligneachat",
+  "pk": 2,
+  "fields": {
+    "achat": 2,
+    "livre": 4,
+    "quantite": 1,
+    "prix_applique": "9500.00"
+  }
+}
+]
