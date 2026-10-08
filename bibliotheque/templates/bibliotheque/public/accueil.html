@@ -1,0 +1,27 @@
+{% extends "bibliotheque/public/base.html" %}{% load biblio_extras %}{% block contenu %}
+<section class="shelf-hero">
+  <div>
+    <h1>Trouvez votre prochain livre.</h1>
+    <p class="shelf-lead">Explorez le catalogue de la bibliothèque, empruntez vos livres en ligne, puis récupérez-les au comptoir ou choisissez la livraison lorsque ce service est disponible.</p>
+    <form action="{% url 'catalogue' %}" class="fiche"><label for="q-accueil">Rechercher dans le catalogue</label>
+      <div class="input-group"><input id="q-accueil" name="q" class="form-control" placeholder="Un titre, un auteur, un sujet"><button class="btn btn-primary px-4">Rechercher</button></div>
+      <p class="fiche-stats mb-0">{{ nb_livres }} titres au catalogue, {{ nb_dispo }} exemplaires en rayon aujourd’hui.</p></form>
+  </div>
+  <div class="hero-library-image"><img src="/static/bibliotheque/images/library-hero.svg" alt="Bibliothèque BiblioFlow"></div>
+  <div class="shelf" role="list" aria-label="Derniers livres arrivés">{% for l in nouveautes %}<a role="listitem" class="spine t{{ l|teinte }}" style="{{ l|dos }};--i:{{ forloop.counter0 }}" href="{% url 'livre_detail' l.pk %}" title="{{ l.titre }}, {{ l.auteur }}"><span>{{ l.titre }}</span></a>{% endfor %}</div>
+</section>
+
+<section class="mb-5"><h2 class="section-h mb-3">Parcourir par catégorie</h2>
+<div class="d-flex flex-wrap gap-2">{% for c in categories %}<a class="cat" href="{% url 'catalogue' %}?cat={{ c.categorie|urlencode }}">{{ c.categorie }} <span>{{ c.n }}</span></a>{% endfor %}</div></section>
+
+<section class="mb-5"><div class="d-flex justify-content-between align-items-baseline mb-3"><h2 class="section-h">Derniers arrivés</h2><a href="{% url 'catalogue' %}" class="fw-semibold">Voir tout le catalogue</a></div>
+<div class="row g-4">{% for l in nouveautes %}<div class="col-6 col-md-4 col-xl-3">{% include "bibliotheque/public/_carte_livre.html" %}</div>{% endfor %}</div></section>
+
+<section><h2 class="section-h mb-3">Comment utiliser BiblioFlow</h2>
+<div class="steps">
+  <div class="step"><div class="step-n">1</div><h3>Inscrivez-vous</h3><p>Créez votre compte en ligne{% if p.validation_adhesion_requise %}, puis faites valider votre adhésion à la bibliothèque{% endif %}.</p></div>
+  <div class="step"><div class="step-n">2</div><h3>Empruntez</h3><p>Choisissez vos livres à emprunter et envoyez votre demande à la bibliothèque.</p></div>
+  <div class="step"><div class="step-n">3</div><h3>Récupérez</h3><p>Le bibliothécaire prépare votre exemplaire. Retirez-le au comptoir ou recevez-le si la livraison est proposée.</p></div>
+  <div class="step"><div class="step-n">4</div><h3>Rendez</h3><p>{{ p.duree_pret_jours }} jours de prêt, prolongeables. Passé ce délai, {{ p.amende_par_jour|floatformat:0 }} FCFA par jour de retard.</p></div>
+</div></section>
+{% endblock %}

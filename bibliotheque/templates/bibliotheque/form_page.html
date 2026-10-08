@@ -1,0 +1,12 @@
+{% extends "bibliotheque/base.html" %}{% block titre %}{{ titre }} – BiblioFlow{% endblock %}{% block entete %}{{ titre }}{% endblock %}{% block contenu %}
+<div class="page-title mb-4"><h1>{{ titre }}</h1>{% if sous_titre %}<p>{{ sous_titre }}</p>{% endif %}</div>
+<div class="cardx p-4" style="max-width:820px"><form method="post" novalidate>{% csrf_token %}
+{% if form.non_field_errors %}<div class="alert alert-danger">{{ form.non_field_errors }}</div>{% endif %}
+<div class="row g-3">{% for f in form %}<div class="{% if f.field.widget.input_type == 'checkbox' %}col-12{% else %}col-md-6{% endif %}">
+{% if f.field.widget.input_type == 'checkbox' %}<div class="form-check form-switch">{{ f }}<label class="form-check-label" for="{{ f.id_for_label }}">{{ f.label }}</label></div>
+{% else %}<label class="form-label fw-semibold small" for="{{ f.id_for_label }}">{{ f.label }}</label>{{ f }}{% endif %}
+{% for e in f.errors %}<div class="text-danger small mt-1">{{ e }}</div>{% endfor %}</div>{% endfor %}</div>
+<div class="d-flex gap-2 mt-4"><button class="btn btn-primary px-4">{{ bouton|default:"Enregistrer" }}</button><a href="{% url retour %}" class="btn btn-light">Annuler</a></div></form></div>
+{% if auteurs %}<datalist id="auteurs">{% for a in auteurs %}<option value="{{ a }}">{% endfor %}</datalist>{% endif %}
+{% if categories %}<datalist id="categories">{% for c in categories %}<option value="{{ c }}">{% endfor %}</datalist>{% endif %}
+{% endblock %}

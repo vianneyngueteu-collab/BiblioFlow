@@ -1,0 +1,4 @@
+{% extends "bibliotheque/public/base.html" %}{% block titre %}Inscription – BiblioFlow{% endblock %}{% block contenu %}
+<div class="mx-auto" style="max-width:760px"><div class="page-title mb-4"><h1>Devenir adhérent</h1><p>Créez votre compte pour emprunter et commander.{% if p.validation_adhesion_requise %} Votre adhésion sera ensuite validée au comptoir de la bibliothèque.{% endif %}</p></div>
+<div class="cardx p-4"><form method="post" novalidate>{% csrf_token %}<div class="row g-3">{% for f in form %}<div class="col-md-6"><label class="form-label fw-semibold small" for="{{ f.id_for_label }}">{{ f.label }}</label>{{ f }}{% for e in f.errors %}<div class="text-danger small mt-1">{{ e }}</div>{% endfor %}</div>{% endfor %}</div>
+<button class="btn btn-primary px-4 py-2 mt-4">Créer mon compte</button> <span class="small ms-2">Déjà inscrit ? <a href="{% url 'login' %}">Connexion</a></span></form></div></div>{% endblock %}

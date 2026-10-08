@@ -1,0 +1,29 @@
+{% extends "bibliotheque/base.html" %}{% block titre %}Tableau de bord – BiblioFlow{% endblock %}{% block entete %}Tableau de bord{% endblock %}{% block contenu %}
+<div class="page-title mb-4"><h1>Bonjour {{ user.prenom|default:user.username }}</h1><p>Voici ce qui demande votre attention aujourd’hui.</p></div>
+<div class="ledger mb-4">
+  <a href="{% url 'commandes' %}" class="ledger-cell"><div class="ledger-n">{{ stats.commandes_a_traiter }}</div><div class="ledger-l">Commandes à traiter</div></a>
+  <a href="{% url 'emprunts' %}?vue=retards" class="ledger-cell"><div class="ledger-n {% if stats.retards %}is-late{% endif %}">{{ stats.retards }}</div><div class="ledger-l">Livres en retard</div></a>
+  <a href="{% url 'sanctions' %}" class="ledger-cell"><div class="ledger-n">{{ stats.sanctions_impayees|floatformat:0 }} <small>FCFA</small></div><div class="ledger-l">Sanctions impayées</div></a>
+  <a href="{% url 'emprunts' %}" class="ledger-cell"><div class="ledger-n">{{ stats.emprunts_en_cours }}</div><div class="ledger-l">Emprunts en cours, dont {{ stats.retours_du_jour }} à rendre aujourd’hui</div></a>
+</div>
+<div class="row g-4">
+  <div class="col-lg-8">
+    <div class="cardx table-card mb-4"><div class="p-4 d-flex justify-content-between align-items-center"><div><h5 class="mb-1">Commandes en cours</h5><div class="muted small">Les plus anciennes d’abord</div></div><a href="{% url 'commandes' %}" class="btn btn-light">Tout voir</a></div>
+    <div class="table-responsive"><table class="table"><thead><tr><th>Type</th><th>Adhérent</th><th>Contenu</th><th>Réception</th><th>Statut</th><th></th></tr></thead><tbody>
+    {% for c in a_traiter %}<tr><td><strong>{{ c.type }}</strong><div class="muted small">{{ c.date|date:"d/m" }}</div></td><td>{{ c.adherent }}</td><td>{{ c.libelle }}</td><td>{% if c.livraison %}<i class="fa-solid fa-truck me-1"></i>Livraison{% else %}<i class="fa-solid fa-store me-1"></i>Retrait{% endif %}</td><td><span class="badge bg-warning-subtle text-warning-emphasis">{{ c.statut }}</span></td><td><a class="btn btn-sm btn-primary" href="{{ c.url }}">Traiter</a></td></tr>
+    {% empty %}<tr><td colspan="6" class="empty">Aucune commande en attente.</td></tr>{% endfor %}</tbody></table></div></div>
+    <div class="cardx table-card"><div class="p-4"><h5 class="mb-1">Retards à relancer</h5><div class="muted small">Sanction estimée à ce jour</div></div>
+    <div class="table-responsive"><table class="table"><thead><tr><th>Adhérent</th><th>Livre</th><th>Retard</th><th>Sanction</th></tr></thead><tbody>
+    {% for e in retards %}<tr><td><strong>{{ e.adherent }}</strong><div class="muted small">{{ e.adherent.telephone }}</div></td><td>{{ e.exemplaire.livre }}</td><td><span class="badge bg-danger">{{ e.jours_retard }} j</span></td><td>{{ e.amende|floatformat:0 }} FCFA</td></tr>
+    {% empty %}<tr><td colspan="4" class="empty">Aucun retard.</td></tr>{% endfor %}</tbody></table></div></div>
+  </div>
+  <div class="col-lg-4">
+    <div class="cardx p-4 mb-4"><h5>À faire</h5><div class="d-grid gap-2 mt-3">
+      <a class="btn btn-primary py-2" href="{% url 'emprunts' %}"><i class="fa-solid fa-book-bookmark me-2"></i>Enregistrer un prêt ou un retour</a>
+      <a class="btn btn-light py-2 d-flex justify-content-between" href="{% url 'adherents' %}?filtre=a_valider"><span><i class="fa-solid fa-user-check me-2"></i>Adhésions à valider</span><span class="badge bg-primary">{{ stats.adhesions_a_valider }}</span></a>
+      <a class="btn btn-light py-2" href="{% url 'achat_nouveau' %}"><i class="fa-solid fa-cart-shopping me-2"></i>Nouvel achat au comptoir</a>
+      <a class="btn btn-light py-2" href="{% url 'adherent_nouveau' %}"><i class="fa-solid fa-user-plus me-2"></i>Nouvel adhérent</a>
+      <a class="btn btn-light py-2" href="{% url 'livre_nouveau' %}"><i class="fa-solid fa-plus me-2"></i>Ajouter un livre</a></div></div>
+    <div class="cardx p-4"><div class="muted small">Catalogue</div><div class="d-flex justify-content-between mt-2"><div><h3 class="mb-0">{{ stats.livres }}</h3><div class="muted small">titres</div></div><div><h3 class="mb-0">{{ stats.exemplaires_dispo }}</h3><div class="muted small">exemplaires en rayon</div></div><div><h3 class="mb-0">{{ stats.achats_jour }}</h3><div class="muted small">achats aujourd’hui</div></div></div></div>
+  </div>
+</div>{% endblock %}
